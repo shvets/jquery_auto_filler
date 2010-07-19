@@ -6,7 +6,7 @@ Auto populates previously saved values on web forms.
 Installation:
 ------------
 
-Click here (http://jquery_auto_filler.heroku.com/javascripts/jquery.auto_filler.js) to install.
+Click here [Jquery Auto Filler](http://jquery_auto_filler.heroku.com/javascripts/jquery.auto_filler.js) to install.
 
 Drag this link to your bookmark bar: [Jquery Auto Filler](javascript:if(typeof%20jQuery%20==%20'undefined'){var%20jquery=document.createElement('script');jquery.setAttribute('src','http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js');document.body.appendChild(jquery);(function(){if(window.jquery%20&&%20typeof%20jQuery!='undefined'){}else{setTimeout(arguments.callee);}})();void(jquery)};%20var%20autofiller=document.createElement('script');autofiller.setAttribute('src','http://jquery_auto_filler.heroku.com/javascripts/jquery.auto_filler.js');document.body.appendChild(autofiller);(function(){if(window.autofiller%20&&%20typeof(jQuery)!='undefined'&&typeof(jQuery.init_autofiller)=='function'){jQuery.init_autofiller();}else{setTimeout(arguments.callee);}})();void(autofiller);).
 
