@@ -20,4 +20,4 @@ Drag this link to your bookmark bar:
   Jquery Auto Filler
 </a>
 
-[test](javascript:alert('aaa');)
+[test](alert('aaa');)
