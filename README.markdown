@@ -1,7 +1,7 @@
 Jquery Auto Filler
 ========
 
-Auto populates previously saved values on web forms.
+Auto populates previously saved values on web forms. The idea and javascript code belongs to my friend Ta Yuan.
 
 Installation:
 ------------
