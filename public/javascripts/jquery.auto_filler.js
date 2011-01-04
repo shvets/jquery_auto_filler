@@ -113,10 +113,11 @@ $.fn.getStore = function( check_name ) {
 }
 
 $.fn.setStore = function ( options) {
+	var _this = this;
 	var idata = new Object();
 
 	this.each(function() {
-		var name = $(this).id_or_name();
+		var name = $(_this).id_or_name();
 		var value;
 
 		if(typeof name == "undefined")
@@ -129,21 +130,21 @@ $.fn.setStore = function ( options) {
 			$.log("== set excluded: "+ name);
 		}
 		else
-		if($(this).attr('type')=='select-one')
+		if($(_this).attr('type')=='select-one')
 		{
-			value = $(this).find('option:selected').get(0).index;
+			value = $(_this).find('option:selected').get(0).index;
 		}
 		else
-		if($(this).attr('type')=='checkbox' || $(this).attr('type')=='radio')
+		if($(_this).attr('type')=='checkbox' || $(_this).attr('type')=='radio')
 		{
-			value = $(this).attr('checked')+"|"+$(this).val();
+			value = $(_this).attr('checked')+"|"+$(_this).val();
 		}
 		else
 		{
-			value = $(this).val();
+			value = $(_this).val();
 		}
 
-		$.log("== set cookie value: "+ $(this).attr('type') +": "+ name +" = ["+ value +"]");
+		$.log("== set cookie value: "+ $(_this).attr('type') +": "+ name +" = ["+ value +"]");
 
 		$(idata).data(name, escape(value));
 	});
