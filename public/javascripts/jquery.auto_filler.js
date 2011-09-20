@@ -1,3 +1,4 @@
+
 (function($) {
 
 //var af_cookie_name = escape("autofiller_"+ document.location.href);
@@ -72,7 +73,7 @@ $.fn.getStore = function( check_name ) {
 
 	this.each(function() {
 		$.log("== "+ $(this).id_or_name() +": ["+ $(cookieobj).data( $(this).id_or_name() ) +"]");
-		if($(excluded_cookies).index($(this).id_or_name())!=-1)
+		if($.inArray($(this).id_or_name(), excluded_cookies)!=-1)
 		{
 			$.log("==== excluded: "+ $(this).id_or_name());
 		}
@@ -113,11 +114,10 @@ $.fn.getStore = function( check_name ) {
 }
 
 $.fn.setStore = function ( options) {
-	var _this = this;
 	var idata = new Object();
 
 	this.each(function() {
-		var name = $(_this).id_or_name();
+		var name = $(this).id_or_name();
 		var value;
 
 		if(typeof name == "undefined")
@@ -125,26 +125,27 @@ $.fn.setStore = function ( options) {
 			return true;
 		}
 		else
-		if($(excluded_cookies).index(name)!=-1)
+		if($.inArray(name, excluded_cookies)!=-1)
 		{
 			$.log("== set excluded: "+ name);
+			return true;
 		}
 		else
-		if($(_this).attr('type')=='select-one')
+		if($(this).attr('type')=='select-one')
 		{
-			value = $(_this).find('option:selected').get(0).index;
+			value = $(this).find('option:selected').eq(0).attr('index');
 		}
 		else
-		if($(_this).attr('type')=='checkbox' || $(_this).attr('type')=='radio')
+		if($(this).attr('type')=='checkbox' || $(this).attr('type')=='radio')
 		{
-			value = $(_this).attr('checked')+"|"+$(_this).val();
+			value = $(this).attr('checked')+"|"+$(this).val();
 		}
 		else
 		{
-			value = $(_this).val();
+			value = $(this).val();
 		}
 
-		$.log("== set cookie value: "+ $(_this).attr('type') +": "+ name +" = ["+ value +"]");
+		$.log("== set cookie value: "+ $(this).attr('type') +": "+ name +" = ["+ value +"]");
 
 		$(idata).data(name, escape(value));
 	});
@@ -354,6 +355,8 @@ function af_cookie_name () {
 			key += $(this).id_or_name();
 		});
 		url = escape("autofiller_"+ document.location.href.replace(document.location.search, "") + key.substring(0, 100)) + urlVersion;
+		// IE 6 and 7 do not support name with "%"
+		url = url.replace(/[\/%]/g, "_");
 	}
 	catch(e)
 	{
@@ -361,6 +364,8 @@ function af_cookie_name () {
 		//$.log("******* Please check your RegExp: a literal '?' should be input as '\\?'");
 		$.log("******* Your input = "+ urlVersion);
 		url = escape("autofiller_"+ document.location.href);
+		// IE 6 and 7 do not support name with "%"
+		url = url.replace(/[\/%]/g, "_");
 	}
 	//$.log("++++++++ "+ url);
 	return url;
