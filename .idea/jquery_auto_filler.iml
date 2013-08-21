@@ -4,6 +4,8 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.3.5, RVM: ruby-2.0.0-p247 [jquery-auto-filler]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v1.3.3, RVM: ruby-2.0.0-p247 [jquery-auto-filler]) [gem]" level="application" />
   </component>
 </module>
 

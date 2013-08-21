@@ -1,12 +1,14 @@
-require "rubygems"
-require 'rack/contrib'
-require 'rack-rewrite'
+use Rack::Static,
+    :urls => ["/images", "/js", "/css"],
+    :root => "public"
 
-use Rack::Static, :urls => ['/images'], :root => "public"
-use Rack::ETag
-use Rack::Rewrite do
-  rewrite '/', '/index.html'
-end
-
-run Rack::Directory.new('public')
-
+run lambda { |env|
+  [
+    200,
+    {
+      'Content-Type'  => 'text/html',
+      'Cache-Control' => 'public, max-age=86400'
+    },
+    File.open('public/index.html', File::RDONLY)
+  ]
+}
