@@ -6,5 +6,5 @@ Auto populates previously saved values on web forms. The idea and javascript cod
 Installation:
 ------------
 
-Click [here](http://jquery-auto-filler.heroku.com) to install the filler.
+Click [here](http://jquery-auto-filler.herokuapp.com) to install the filler.
 
