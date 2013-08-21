@@ -1,0 +1,7 @@
+heroku keys:add
+
+git remote -v
+
+heroku apps
+
+heroku git:remote -a jquery-auto-filler
