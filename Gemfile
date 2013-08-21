@@ -1,9 +1,7 @@
 source 'https://rubygems.org'
 
+ruby "1.9.3"
+
 gem "rack"
 gem "rack-contrib"
 gem "rack-rewrite"
-
-#group :development do
-#  gem "heroku"
-#end
