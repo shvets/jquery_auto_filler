@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ee5fe14-5356-4132-bd6e-5f3aeb37c66b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ru" afterPath="$PROJECT_DIR$/config.ru" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jenkinsSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jquery_auto_filler.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2ee5fe14-5356-4132-bd6e-5f3aeb37c66b" time="1377612751992" ignored="false" />
+    <file path="/Dummy.txt" changelist="2ee5fe14-5356-4132-bd6e-5f3aeb37c66b" time="1377613271986" ignored="false" />
     <file path="$USER_HOME$/work/ui/neptune/spec/services/resource_accessor_spec.rb" changelist="2ee5fe14-5356-4132-bd6e-5f3aeb37c66b" time="1377613056405" ignored="false" />
     <file path="/resource_accessor_spec.rb" changelist="2ee5fe14-5356-4132-bd6e-5f3aeb37c66b" time="1377613052756" ignored="false" />
     <file path="/config.ru" changelist="2ee5fe14-5356-4132-bd6e-5f3aeb37c66b" time="1377613236609" ignored="false" />
@@ -61,21 +59,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="467" selection-start="508" selection-end="581" vertical-scroll-proportion="-2.509804">
+            <state line="8" column="507" selection-start="548" selection-end="548" vertical-scroll-proportion="0.23188406">
               <folding>
-                <marker date="1377612966000" expanded="true" signature="5:14" placeholder="..." />
+                <marker date="1377613734000" expanded="true" signature="5:14" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.ru" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="config.ru" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.ru">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="38" selection-start="56" selection-end="56" vertical-scroll-proportion="0.025974026">
+            <state line="1" column="38" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,8 +115,8 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/.ruby-version" />
         <option value="$PROJECT_DIR$/README.markdown" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/config.ru" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -467,13 +465,18 @@
       <created>1377269159331</created>
       <updated>1377269159331</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="bug fixes">
+      <created>1377613277912</created>
+      <updated>1377613277912</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="318" y="62" width="1588" height="1058" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -488,7 +491,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -612,7 +614,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="21" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1377612966000" expanded="true" signature="5:14" placeholder="..." />
+            <marker date="1377613734000" expanded="true" signature="5:14" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -658,6 +660,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.ru">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="38" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.auto_filler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="37" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
@@ -669,17 +678,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="467" selection-start="508" selection-end="581" vertical-scroll-proportion="-2.509804">
+        <state line="8" column="507" selection-start="548" selection-end="548" vertical-scroll-proportion="0.23188406">
           <folding>
-            <marker date="1377612966000" expanded="true" signature="5:14" placeholder="..." />
+            <marker date="1377613734000" expanded="true" signature="5:14" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="38" selection-start="56" selection-end="56" vertical-scroll-proportion="0.025974026">
-          <folding />
         </state>
       </provider>
     </entry>
